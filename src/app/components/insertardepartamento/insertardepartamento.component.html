@@ -1,0 +1,12 @@
+<div>
+    <form #insertarForm="ngForm">
+        <label>Numero</label>
+        <input type="number" name="cajanumero" #cajanumero><br/>
+        <label>Nombre</label>
+        <input type="text"name="cajanombre" #cajanombre><br/>
+        <label>Localidad</label>
+        <input type="text"name="cajalocalidad" #cajalocalidad><br/>
+
+        <button (click)="insertarDepartamento()" class="btn btn-info">Insertar</button>
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <form #modificarForm="ngForm" *ngIf="departamento">
+        <input type="hidden" name="cajanumero" #cajanumero><br/>
+        <label>Nombre</label>
+        <input type="text"name="cajanombre" #cajanombre value="{{departamento.nombre}}"><br/>
+        <label>Localidad</label>
+        <input type="text"name="cajalocalidad" #cajalocalidad value="{{departamento.localidad}}"><br/>
+
+        <button (click)="modificarDepartamento()" class="btn btn-info">Modificar</button>
+    </form>
+</div>
